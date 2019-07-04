@@ -29,7 +29,7 @@ let menuData = {
                     "name": "wxa",
                     "active": false,
                     "url": "http://mp.weixin.qq.com",
-                    "appid": "wx286b93c14bbf93aa",
+                    "appid": "wxbc5e79b42e31a436",
                     "pagePath": "pages/lunar/index"
                 }, {
                 	"id": null,
