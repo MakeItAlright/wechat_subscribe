@@ -1,17 +1,22 @@
 # 配置MySQL数据库的连接参数
 spring:
    datasource:
+      # jdbc:mysql://127.0.0.1:3306/kemao_3 表示找到本机的MySQL服务器中名为kemao_3的数据库
+      # useSSL=false 表示不使用SSL加密
+      # serverTimezone=CST 指定服务器的时区，CST（China Standard Time）
       url: jdbc:mysql://127.0.0.1:3306/wechat_sub?useSSL=false&serverTimezone=CST&allowPublicKeyRetrieval=true
       username: root
       password: root
-   
-   # 配置Redis的连接信息
+   jpa:
+      generate-ddl: true
+      properties:
+         hibernate.dialect: org.hibernate.dialect.MySQL57Dialect
    redis:
-      # 这里换自己的IP
+      # 大家要把IP改为远程服务器的IP
       host: 47.75.53.63
       port: 6379
-      database: 15
+      # Redis里面没有数据库名，只有数据库的序号，默认是有16个数据库，分别是从0~16。
+      # 多人共享一个服务器的时候，每个人协商好各自使用哪个数据库。
+      database: 0
 
-# 修改运行时的端口号，因为一个端口号只能被一个人使用。
-# 如果多个人使用一台服务器，自然要使用不同的端口！
-server.port: 9089
+server.port: 8091
