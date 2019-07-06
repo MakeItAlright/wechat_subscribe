@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
 @Controller
-@RequestMapping("/self_menu")
+@RequestMapping("/menu")
 public class MenuController {
 
 	@Autowired
