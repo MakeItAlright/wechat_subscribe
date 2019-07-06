@@ -114,9 +114,9 @@
 <div style="width: 800px;margin-left: auto;margin-right: auto; text-align: right;">
 	<button onclick="saveMenus()">保存</button>
 </div>
-<script src="/js/vue.js"></script>
+<script src="/static/js/vue.js"></script>
 <script src="/webjars/jquery/3.4.1/jquery.min.js"></script>
-<script type="text/javascript" src="/js/menu.js">
+<script type="text/javascript" src="/static/js/menu.js">
 </script>
 </body>
 </html>
