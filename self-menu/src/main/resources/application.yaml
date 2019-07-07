@@ -19,4 +19,4 @@ spring:
       # 多人共享一个服务器的时候，每个人协商好各自使用哪个数据库。
       database: 0
 
-server.port: 8099
+server.port: 8091
